@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Title -->
+  <title>Free Online Tools - Age Calculator, EMI, BMI &amp; More | Smart Tools Hub</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Smart Tools Hub offers free online calculators including Age Calculator, EMI Calculator, BMI Calculator, Percentage Calculator &amp; Simple Interest. Fast, accurate &amp; easy to use." />
+  <meta name="keywords" content="free online tools, age calculator, EMI calculator, BMI calculator, percentage calculator, simple interest calculator, online tools India, free calculator" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Shaurya Shukla" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourusername.github.io/" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Free Online Tools - Age Calculator, EMI, BMI &amp; More" />
+  <meta property="og:description" content="Smart Tools Hub offers free online calculators including Age Calculator, EMI Calculator, BMI Calculator, Percentage &amp; Simple Interest tools." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/" />
+  <meta property="og:site_name" content="Smart Tools Hub" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Free Online Tools - Age Calculator, EMI, BMI &amp; More" />
+  <meta name="twitter:description" content="Smart Tools Hub offers free online calculators. Fast, accurate &amp; 100% free." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(37,99,235,0.3);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: #93c5fd; }
+    nav { display: flex; gap: 1.5rem; }
+    nav a {
+      color: rgba(255,255,255,0.85);
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #fff; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 50%, #e0f2fe 100%);
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 1rem;
+      letter-spacing: -1px;
+    }
+    .hero h1 span { color: #2563eb; }
+    .hero p {
+      font-size: 1.05rem;
+      color: #64748b;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ===== CONTAINER ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ===== AD PLACEHOLDER ===== */
+    .ad-placeholder {
+      border: 2px dashed #cbd5e1;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      background: #fff;
+      margin: 2rem 0;
+    }
+
+    /* ===== SECTION TITLE ===== */
+    .section-title {
+      text-align: center;
+      margin: 2.5rem 0 2rem;
+    }
+    .section-title h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+    }
+    .section-title p { color: #64748b; font-size: 0.95rem; }
+
+    /* ===== TOOLS GRID ===== */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 10px 40px rgba(37,99,235,0.12);
+      transform: translateY(-2px);
+    }
+    .card-header {
+      background: linear-gradient(135deg, #eff6ff 0%, #fff 100%);
+      border-bottom: 1px solid #f1f5f9;
+      padding: 1.25rem 1.5rem;
+    }
+    .card-header-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.35rem;
+    }
+    .tool-icon {
+      width: 38px;
+      height: 38px;
+      background: #dbeafe;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2563eb;
+      flex-shrink: 0;
+    }
+    .tool-icon svg { width: 20px; height: 20px; }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+    .card-desc { font-size: 0.85rem; color: #64748b; }
+    .card-body { padding: 1.5rem; }
+
+    /* ===== FORM ELEMENTS ===== */
+    .form-group { margin-bottom: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 0.4rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.6rem 0.875rem;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      color: #1e293b;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+    input::placeholder { color: #94a3b8; }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 0.5rem;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #1d4ed8; box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
+    .btn-primary:disabled {
+      background: #93c5fd;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+    .btn-ghost {
+      background: transparent;
+      color: #2563eb;
+      border: 1px solid transparent;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.8rem;
+      width: auto;
+      margin-top: 0;
+    }
+    .btn-ghost:hover { background: #eff6ff; border-color: #dbeafe; }
+    .btn-whatsapp {
+      background: #25d366;
+      color: #fff;
+      font-size: 1.05rem;
+      padding: 1rem;
+    }
+    .btn-whatsapp:hover { background: #128c7e; box-shadow: 0 6px 20px rgba(37,211,102,0.35); }
+
+    /* ===== RESULT BOX ===== */
+    .result-box {
+      margin-top: 1.25rem;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      animation: fadeSlideUp 0.4s ease;
+    }
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .result-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    .result-grid { display: grid; gap: 0.75rem; }
+    .result-grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .result-grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .result-item {
+      background: #fff;
+      border: 1px solid #f1f5f9;
+      border-radius: 10px;
+      padding: 0.75rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .result-value {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #2563eb;
+      display: block;
+      line-height: 1.2;
+    }
+    .result-value-lg {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #2563eb;
+      display: block;
+    }
+    .result-value-xl {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #1e293b;
+    }
+    .result-sub {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 0.2rem;
+    }
+    .result-card-center {
+      background: #fff;
+      border: 1px solid #f1f5f9;
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin-bottom: 0.75rem;
+    }
+    .text-green { color: #10b981; }
+    .text-amber { color: #f59e0b; }
+    .text-orange { color: #f97316; }
+    .text-red { color: #ef4444; }
+    .text-secondary { color: #475569; font-size: 0.9rem; margin: 0.3rem 0; }
+
+    /* ===== SPINNER ===== */
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: inline-block;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ===== FAQ ===== */
+    .faq-section { padding: 3rem 0; }
+    .faq-container {
+      max-width: 768px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .faq-item { border-bottom: 1px solid #f1f5f9; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.2rem 1.5rem;
+      text-align: left;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1e293b;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-family: inherit;
+      transition: background 0.2s, color 0.2s;
+    }
+    .faq-question:hover { background: #f8fafc; color: #2563eb; }
+    .faq-question.active { color: #2563eb; }
+    .faq-arrow {
+      width: 20px; height: 20px; flex-shrink: 0;
+      color: #94a3b8;
+      transition: transform 0.3s;
+    }
+    .faq-question.active .faq-arrow { transform: rotate(180deg); color: #2563eb; }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s;
+      font-size: 0.9rem;
+      color: #475569;
+      line-height: 1.7;
+    }
+    .faq-answer.open {
+      max-height: 200px;
+      padding: 0 1.5rem 1.2rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      color: rgba(255,255,255,0.8);
+      margin-top: 4rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 1.5rem;
+    }
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .footer-brand .logo { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .footer-brand p { font-size: 0.85rem; max-width: 260px; opacity: 0.7; }
+    .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .footer-links h3 { font-size: 0.8rem; font-weight: 700; color: #fff; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.75rem; }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+    .footer-links a { font-size: 0.875rem; color: rgba(255,255,255,0.7); transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.82rem;
+      opacity: 0.65;
+    }
+    .footer-dev-btn {
+      background: none;
+      border: none;
+      color: #93c5fd;
+      font-weight: 600;
+      font-size: 0.82rem;
+      cursor: pointer;
+      font-family: inherit;
+      transition: color 0.2s;
+      padding: 0;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .footer-dev-btn:hover { color: #fff; }
+
+    /* ===== MODAL ===== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.6);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s;
+      padding: 1rem;
+    }
+    .modal-overlay.open { opacity: 1; pointer-events: all; }
+    .modal {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+      transform: translateY(12px) scale(0.97);
+      transition: transform 0.25s;
+      text-align: center;
+    }
+    .modal-overlay.open .modal { transform: translateY(0) scale(1); }
+    .modal-close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: #f1f5f9;
+      border: none;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #64748b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .modal-close:hover { background: #e2e8f0; }
+    .modal { position: relative; }
+    .dev-avatar {
+      width: 80px; height: 80px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .modal h3 { font-size: 1.3rem; font-weight: 800; color: #1e293b; margin-bottom: 0.25rem; }
+    .modal .dev-title { color: #64748b; font-size: 0.875rem; margin-bottom: 1.5rem; }
+    .modal a { display: block; }
+
+    /* ===== TOAST ===== */
+    .toast {
+      position: fixed;
+      bottom: 1.5rem; right: 1.5rem;
+      background: #1e293b;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s;
+      z-index: 9999;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    /* ===== PAGE MODALS (About, Contact, Privacy) ===== */
+    .page-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.65);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s;
+      padding: 1rem;
+    }
+    .page-modal-overlay.open { opacity: 1; pointer-events: all; }
+    .page-modal {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2rem 2.25rem;
+      max-width: 600px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+      transform: translateY(14px) scale(0.97);
+      transition: transform 0.25s;
+      position: relative;
+    }
+    .page-modal-overlay.open .page-modal { transform: translateY(0) scale(1); }
+    .page-modal-close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: #f1f5f9;
+      border: none;
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #64748b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+    .page-modal-close:hover { background: #e2e8f0; color: #1e293b; }
+    .page-modal-icon {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    .page-modal-icon svg { width: 26px; height: 26px; color: #fff; }
+    .page-modal h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 0.35rem;
+      padding-right: 2.5rem;
+    }
+    .page-modal .subtitle {
+      color: #64748b;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .page-modal h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin: 1.25rem 0 0.5rem;
+    }
+    .page-modal p {
+      font-size: 0.9rem;
+      color: #475569;
+      line-height: 1.75;
+      margin-bottom: 0.75rem;
+    }
+    .page-modal ul {
+      margin-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .page-modal ul li {
+      font-size: 0.9rem;
+      color: #475569;
+      line-height: 1.75;
+      margin-bottom: 0.3rem;
+    }
+    /* Contact form inside modal */
+    .contact-form .form-group { margin-bottom: 1rem; }
+    .contact-form label { font-size: 0.82rem; font-weight: 600; color: #374151; display: block; margin-bottom: 0.4rem; }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.65rem 0.9rem;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      color: #1e293b;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      resize: vertical;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+    .contact-form textarea { min-height: 100px; }
+    .contact-info-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem 1rem;
+      background: #f8fafc;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 0.75rem;
+    }
+    .contact-info-icon {
+      width: 36px; height: 36px;
+      background: #dbeafe;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #2563eb;
+    }
+    .contact-info-icon svg { width: 18px; height: 18px; }
+    .contact-info-label { font-size: 0.75rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }
+    .contact-info-value { font-size: 0.9rem; font-weight: 600; color: #1e293b; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 640px) {
+      .tools-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .result-grid-3 { grid-template-columns: repeat(3, 1fr); }
+      .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      nav { gap: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">Smart <span>Tools</span> Hub</div>
+      <nav>
+        <a href="#tools">Tools</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1><span>Smart Tools</span> Hub</h1>
+    <p>Your free, reliable utility belt for everyday calculations. No sign-ups, no fees — just fast answers when you need them.</p>
+  </section>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <div class="container">
+
+      <!-- Top Ad -->
+      <!-- Top Ad -->
+      <div class="ad-placeholder">Advertisement</div>
+
+      <!-- Tools Section -->
+      <div class="section-title" id="tools">
+        <h2>Everyday Calculators</h2>
+        <p>Choose a tool below to get started instantly. All calculations are 100% free.</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- 1. AGE CALCULATOR -->
+        <article class="card" id="age-calculator">
+          <div class="card-header">
+            <div class="card-header-row">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <h2 class="card-title">Age Calculator</h2>
+            </div>
+            <p class="card-desc">Calculate your exact age in years, months and days using your date of birth.</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="age-dob">Date of Birth</label>
+              <input type="date" id="age-dob" max="" />
+            </div>
+            <button class="btn btn-primary" id="age-btn" onclick="calculateAge()">Calculate Age</button>
+            <div class="result-box" id="age-result" style="display:none;">
+              <div class="result-header">
+                <span class="result-label">Result</span>
+                <button class="btn-ghost btn" onclick="copyText('age-copy-text')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </div>
+              <div class="result-grid result-grid-3">
+                <div class="result-item"><span class="result-value" id="age-years">0</span><span class="result-sub">Years</span></div>
+                <div class="result-item"><span class="result-value" id="age-months">0</span><span class="result-sub">Months</span></div>
+                <div class="result-item"><span class="result-value" id="age-days">0</span><span class="result-sub">Days</span></div>
+              </div>
+              <span id="age-copy-text" style="display:none;"></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. EMI CALCULATOR -->
+        <article class="card" id="emi-calculator">
+          <div class="card-header">
+            <div class="card-header-row">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/></svg>
+              </div>
+              <h2 class="card-title">EMI Calculator</h2>
+            </div>
+            <p class="card-desc">Calculate your monthly loan EMI payments instantly. Great for home, car or personal loans.</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="emi-principal">Loan Amount (₹)</label>
+              <input type="number" id="emi-principal" placeholder="e.g. 500000" min="0" />
+            </div>
+            <div class="form-row form-group">
+              <div>
+                <label for="emi-rate">Interest Rate (%)</label>
+                <input type="number" id="emi-rate" placeholder="e.g. 10.5" step="0.1" min="0" />
+              </div>
+              <div>
+                <label for="emi-months">Tenure (Months)</label>
+                <input type="number" id="emi-months" placeholder="e.g. 60" min="1" />
+              </div>
+            </div>
+            <button class="btn btn-primary" onclick="calculateEMI()">Calculate EMI</button>
+            <div class="result-box" id="emi-result" style="display:none;">
+              <div class="result-header">
+                <span class="result-label">Result</span>
+                <button class="btn-ghost btn" onclick="copyText('emi-copy-text')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </div>
+              <div class="result-card-center">
+                <div class="result-sub">Monthly EMI</div>
+                <div class="result-value-lg" id="emi-monthly">₹0</div>
+              </div>
+              <div class="result-grid result-grid-2">
+                <div class="result-item"><span class="result-sub">Total Interest</span><span class="result-value" id="emi-interest">₹0</span></div>
+                <div class="result-item"><span class="result-sub">Total Amount</span><span class="result-value" id="emi-total">₹0</span></div>
+              </div>
+              <span id="emi-copy-text" style="display:none;"></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. BMI CALCULATOR -->
+        <article class="card" id="bmi-calculator">
+          <div class="card-header">
+            <div class="card-header-row">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <h2 class="card-title">BMI Calculator</h2>
+            </div>
+            <p class="card-desc">Check your Body Mass Index and weight category (Underweight/Normal/Overweight/Obese).</p>
+          </div>
+          <div class="card-body">
+            <div class="form-row form-group">
+              <div>
+                <label for="bmi-height">Height (cm)</label>
+                <input type="number" id="bmi-height" placeholder="e.g. 170" min="50" max="300" />
+              </div>
+              <div>
+                <label for="bmi-weight">Weight (kg)</label>
+                <input type="number" id="bmi-weight" placeholder="e.g. 65" min="1" max="500" />
+              </div>
+            </div>
+            <button class="btn btn-primary" onclick="calculateBMI()">Calculate BMI</button>
+            <div class="result-box" id="bmi-result" style="display:none;">
+              <div class="result-header">
+                <span class="result-label">Result</span>
+                <button class="btn-ghost btn" onclick="copyText('bmi-copy-text')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </div>
+              <div class="result-card-center">
+                <div class="result-value-xl" id="bmi-value">0</div>
+                <div class="result-sub" id="bmi-category" style="font-size:1rem;font-weight:700;margin-top:0.25rem;"></div>
+              </div>
+              <span id="bmi-copy-text" style="display:none;"></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. PERCENTAGE CALCULATOR -->
+        <article class="card" id="percentage-calculator">
+          <div class="card-header">
+            <div class="card-header-row">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+              </div>
+              <h2 class="card-title">Percentage Calculator</h2>
+            </div>
+            <p class="card-desc">Find what percentage one number is of another. Perfect for marks, discounts &amp; more.</p>
+          </div>
+          <div class="card-body">
+            <div class="form-row form-group">
+              <div>
+                <label for="pct-value">Value</label>
+                <input type="number" id="pct-value" placeholder="e.g. 25" />
+              </div>
+              <div>
+                <label for="pct-total">Total</label>
+                <input type="number" id="pct-total" placeholder="e.g. 100" />
+              </div>
+            </div>
+            <button class="btn btn-primary" onclick="calculatePercentage()">Calculate Percentage</button>
+            <div class="result-box" id="pct-result" style="display:none;">
+              <div class="result-header">
+                <span class="result-label">Result</span>
+                <button class="btn-ghost btn" onclick="copyText('pct-copy-text')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </div>
+              <div class="result-card-center">
+                <p class="text-secondary"><span id="pct-val-display"></span> is</p>
+                <div class="result-value-lg" id="pct-answer">0%</div>
+                <p class="text-secondary">of <span id="pct-total-display"></span></p>
+              </div>
+              <span id="pct-copy-text" style="display:none;"></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. SIMPLE INTEREST CALCULATOR -->
+        <article class="card" id="si-calculator">
+          <div class="card-header">
+            <div class="card-header-row">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h2 class="card-title">Simple Interest Calculator</h2>
+            </div>
+            <p class="card-desc">Calculate simple interest and total amount using Principal, Rate and Time.</p>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="si-principal">Principal Amount (₹)</label>
+              <input type="number" id="si-principal" placeholder="e.g. 10000" min="0" />
+            </div>
+            <div class="form-row form-group">
+              <div>
+                <label for="si-rate">Rate (% p.a.)</label>
+                <input type="number" id="si-rate" placeholder="e.g. 5" step="0.1" min="0" />
+              </div>
+              <div>
+                <label for="si-time">Time (Years)</label>
+                <input type="number" id="si-time" placeholder="e.g. 2" step="0.5" min="0" />
+              </div>
+            </div>
+            <button class="btn btn-primary" onclick="calculateSI()">Calculate Interest</button>
+            <div class="result-box" id="si-result" style="display:none;">
+              <div class="result-header">
+                <span class="result-label">Result</span>
+                <button class="btn-ghost btn" onclick="copyText('si-copy-text')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </div>
+              <div class="result-grid result-grid-2">
+                <div class="result-item"><span class="result-sub">Simple Interest</span><span class="result-value" id="si-interest">₹0</span></div>
+                <div class="result-item"><span class="result-sub">Total Amount</span><span class="result-value" id="si-total">₹0</span></div>
+              </div>
+              <span id="si-copy-text" style="display:none;"></span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- end tools-grid -->
+
+      <!-- Middle Ad -->
+      <!-- Middle Ad -->
+      <div class="ad-placeholder">Advertisement</div>
+
+      <!-- FAQ Section -->
+      <section class="faq-section" id="faq">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about Smart Tools Hub.</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              What tools are available on Smart Tools Hub?
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">We offer 5 essential calculators: Age Calculator, EMI Calculator, BMI Calculator, Percentage Calculator, and Simple Interest Calculator. We are constantly adding more useful tools.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              Is Smart Tools Hub free to use?
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">Yes, absolutely! All our tools are 100% free to use with no hidden charges, subscriptions, or premium tiers. Access all calculators without paying anything.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              How accurate are the calculations?
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">Our calculators use standard, universally accepted mathematical formulas to ensure precise and accurate results for all your everyday calculations.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              Do I need to create an account?
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">No account is required. You can use all our tools instantly without signing up or providing any personal information.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              Is my data safe?
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">Yes! All calculations are performed directly in your browser (client-side). We do not store, track, or transmit any of the data you enter into our calculators.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              Can I use Smart Tools Hub on mobile?
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">Absolutely! Smart Tools Hub is fully mobile-responsive and works perfectly on smartphones, tablets, and desktops. No app download needed.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Ad -->
+      <!-- Bottom Ad -->
+      <div class="ad-placeholder">Advertisement</div>
+
+    </div><!-- end container -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">Smart <span>Tools</span> Hub</div>
+          <p>Free online calculators for everyday life. Fast, accurate, and always available.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#age-calculator">Age Calculator</a></li>
+              <li><a href="#emi-calculator">EMI Calculator</a></li>
+              <li><a href="#bmi-calculator">BMI Calculator</a></li>
+              <li><a href="#percentage-calculator">Percentage</a></li>
+              <li><a href="#si-calculator">Simple Interest</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="javascript:void(0)" onclick="openPageModal('about')">About Us</a></li>
+              <li><a href="javascript:void(0)" onclick="openPageModal('contact')">Contact Us</a></li>
+              <li><a href="javascript:void(0)" onclick="openPageModal('privacy')">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Smart Tools Hub. All rights reserved.</span>
+        <button class="footer-dev-btn" onclick="openModal()">Design by Shaurya Shukla</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== ABOUT US MODAL ===== -->
+  <div class="page-modal-overlay" id="modal-about" onclick="handlePageOverlayClick(event,'modal-about')">
+    <div class="page-modal" role="dialog" aria-modal="true">
+      <button class="page-modal-close" onclick="closePageModal('modal-about')">&times;</button>
+      <div class="page-modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <h2>About Us</h2>
+      <p class="subtitle">Smart Tools Hub &mdash; Free online tools for everyday life</p>
+
+      <h3>Who We Are</h3>
+      <p>Smart Tools Hub is a free, browser-based multi-tool platform designed to make everyday calculations fast, accurate, and accessible to everyone. Whether you are a student, professional, or homemaker, our tools are built with you in mind.</p>
+
+      <h3>Our Mission</h3>
+      <p>We believe that powerful tools should be free and available to all. Our mission is to provide reliable, easy-to-use calculators that save you time and help you make informed decisions &mdash; without any sign-ups, fees, or complications.</p>
+
+      <h3>What We Offer</h3>
+      <ul>
+        <li><strong>Age Calculator</strong> &mdash; Find your exact age in years, months and days</li>
+        <li><strong>EMI Calculator</strong> &mdash; Plan your loan repayments easily</li>
+        <li><strong>BMI Calculator</strong> &mdash; Check your Body Mass Index and health category</li>
+        <li><strong>Percentage Calculator</strong> &mdash; Quick percentage calculations for marks, discounts & more</li>
+        <li><strong>Simple Interest Calculator</strong> &mdash; Compute interest and total amount instantly</li>
+      </ul>
+
+      <h3>Privacy &amp; Trust</h3>
+      <p>All calculations are performed entirely in your browser. We never store, collect, or share your data. Your privacy is our priority.</p>
+
+      <h3>Developer</h3>
+      <p>Smart Tools Hub is designed and developed by <strong>Shaurya Shukla</strong>, a passionate full-stack developer dedicated to building useful web products for everyone.</p>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT US MODAL ===== -->
+  <div class="page-modal-overlay" id="modal-contact" onclick="handlePageOverlayClick(event,'modal-contact')">
+    <div class="page-modal" role="dialog" aria-modal="true">
+      <button class="page-modal-close" onclick="closePageModal('modal-contact')">&times;</button>
+      <div class="page-modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.68 16.92z"/></svg>
+      </div>
+      <h2>Contact Us</h2>
+      <p class="subtitle">We would love to hear from you. Reach out anytime!</p>
+
+      <div class="contact-info-row">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.68 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">WhatsApp</div>
+          <div class="contact-info-value">+91 63935 52560</div>
+        </div>
+      </div>
+
+      <div class="contact-info-row">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Email</div>
+          <div class="contact-info-value">shauryashukla@email.com</div>
+        </div>
+      </div>
+
+      <div class="contact-info-row">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Location</div>
+          <div class="contact-info-value">India</div>
+        </div>
+      </div>
+
+      <h3>Send a Message</h3>
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" placeholder="e.g. Rahul Sharma" />
+        </div>
+        <div class="form-group">
+          <label for="cf-email">Email Address</label>
+          <input type="email" id="cf-email" placeholder="e.g. rahul@gmail.com" />
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" placeholder="Write your message here..."></textarea>
+        </div>
+        <a href="https://wa.me/916393552560" target="_blank" rel="noopener noreferrer" id="contact-wa-link">
+          <button class="btn btn-primary" style="margin-top:0;" onclick="sendContactViaWhatsApp(event)">Send via WhatsApp</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PRIVACY POLICY MODAL ===== -->
+  <div class="page-modal-overlay" id="modal-privacy" onclick="handlePageOverlayClick(event,'modal-privacy')">
+    <div class="page-modal" role="dialog" aria-modal="true">
+      <button class="page-modal-close" onclick="closePageModal('modal-privacy')">&times;</button>
+      <div class="page-modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h2>Privacy Policy</h2>
+      <p class="subtitle">Last updated: January 2026</p>
+
+      <h3>1. Introduction</h3>
+      <p>Welcome to Smart Tools Hub. We are committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our website at smarttoolshub.com.</p>
+
+      <h3>2. Information We Collect</h3>
+      <p>Smart Tools Hub does <strong>not</strong> collect, store, or transmit any personal data. All calculations are performed locally in your browser. We do not require you to create an account or provide any personal information to use our tools.</p>
+
+      <h3>3. Cookies</h3>
+      <p>We do not use tracking cookies or analytics cookies. Our website may use essential cookies only for basic functionality such as remembering your preferences within the same session.</p>
+
+      <h3>4. Third-Party Advertising</h3>
+      <p>Our website may display advertisements served by third-party ad networks (such as Google AdSense). These ad networks may use cookies to serve relevant ads based on your browsing behaviour. We do not control the cookies placed by advertisers.</p>
+
+      <h3>5. Data Security</h3>
+      <p>Since we do not collect or store any user data, there is no risk of your personal information being breached through our platform. All tool inputs you enter remain only on your device.</p>
+
+      <h3>6. Children's Privacy</h3>
+      <p>Smart Tools Hub is suitable for users of all ages. We do not knowingly collect personal information from children under 13 years of age.</p>
+
+      <h3>7. Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. We encourage you to review this page periodically.</p>
+
+      <h3>8. Contact Us</h3>
+      <p>If you have any questions about this Privacy Policy, please contact us via WhatsApp at <strong>+91 63935 52560</strong> or click on "Design by Shaurya Shukla" in the footer.</p>
+    </div>
+  </div>
+
+  <!-- ===== DEVELOPER CONTACT MODAL ===== -->
+  <div class="modal-overlay" id="dev-modal" onclick="handleOverlayClick(event)">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Developer Contact">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+      <div class="dev-avatar">SS</div>
+      <h3>Shaurya Shukla</h3>
+      <p class="dev-title">Full Stack Developer</p>
+      <a href="https://wa.me/916393552560" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn-whatsapp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Set max date for age calculator
+    document.getElementById('age-dob').max = new Date().toISOString().split('T')[0];
+
+    /* ===== UTILITY ===== */
+    function fmt(n) {
+      return n.toLocaleString('en-IN');
+    }
+
+    function showResult(id) {
+      const el = document.getElementById(id);
+      el.style.display = 'block';
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg || 'Copied to clipboard!';
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    function copyText(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const text = el.textContent || el.innerText;
+      navigator.clipboard.writeText(text).then(() => showToast('Copied to clipboard!'));
+    }
+
+    function setLoading(btn, loading) {
+      if (loading) {
+        btn.disabled = true;
+        btn.innerHTML = '<span class="spinner"></span> Calculating...';
+      } else {
+        btn.disabled = false;
+        btn.textContent = btn.dataset.label;
+      }
+    }
+
+    /* ===== AGE CALCULATOR ===== */
+    function calculateAge() {
+      const dobVal = document.getElementById('age-dob').value;
+      if (!dobVal) return showToast('Please enter your date of birth.');
+
+      const dob = new Date(dobVal);
+      const today = new Date();
+      if (dob >= today) return showToast('Date of birth must be in the past.');
+
+      let years = today.getFullYear() - dob.getFullYear();
+      let months = today.getMonth() - dob.getMonth();
+      let days = today.getDate() - dob.getDate();
+
+      if (days < 0) {
+        months--;
+        const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+        days += prevMonth.getDate();
+      }
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+
+      document.getElementById('age-years').textContent = years;
+      document.getElementById('age-months').textContent = months;
+      document.getElementById('age-days').textContent = days;
+      document.getElementById('age-copy-text').textContent = `${years} Years, ${months} Months, ${days} Days`;
+      showResult('age-result');
+    }
+
+    /* ===== EMI CALCULATOR ===== */
+    function calculateEMI() {
+      const p = parseFloat(document.getElementById('emi-principal').value);
+      const r = parseFloat(document.getElementById('emi-rate').value);
+      const n = parseFloat(document.getElementById('emi-months').value);
+
+      if (!p || !r || !n || p <= 0 || r <= 0 || n <= 0) return showToast('Please fill all fields with valid values.');
+
+      const monthlyRate = r / 12 / 100;
+      const emi = (p * monthlyRate * Math.pow(1 + monthlyRate, n)) / (Math.pow(1 + monthlyRate, n) - 1);
+      const totalAmount = emi * n;
+      const totalInterest = totalAmount - p;
+
+      const emiR = Math.round(emi);
+      const totalR = Math.round(totalAmount);
+      const intR = Math.round(totalInterest);
+
+      document.getElementById('emi-monthly').textContent = '₹' + fmt(emiR);
+      document.getElementById('emi-interest').textContent = '₹' + fmt(intR);
+      document.getElementById('emi-total').textContent = '₹' + fmt(totalR);
+      document.getElementById('emi-copy-text').textContent = `Monthly EMI: ₹${fmt(emiR)} | Total Interest: ₹${fmt(intR)} | Total Amount: ₹${fmt(totalR)}`;
+      showResult('emi-result');
+    }
+
+    /* ===== BMI CALCULATOR ===== */
+    function calculateBMI() {
+      const h = parseFloat(document.getElementById('bmi-height').value);
+      const w = parseFloat(document.getElementById('bmi-weight').value);
+
+      if (!h || !w || h <= 0 || w <= 0) return showToast('Please enter valid height and weight.');
+
+      const hm = h / 100;
+      const bmi = w / (hm * hm);
+      const bmiRounded = bmi.toFixed(1);
+
+      let category, colorClass;
+      if (bmi < 18.5) { category = 'Underweight'; colorClass = 'text-amber'; }
+      else if (bmi < 25) { category = 'Normal Weight'; colorClass = 'text-green'; }
+      else if (bmi < 30) { category = 'Overweight'; colorClass = 'text-orange'; }
+      else { category = 'Obese'; colorClass = 'text-red'; }
+
+      const valEl = document.getElementById('bmi-value');
+      const catEl = document.getElementById('bmi-category');
+      valEl.textContent = bmiRounded;
+      catEl.textContent = category;
+      catEl.className = 'result-sub ' + colorClass;
+      catEl.style.fontSize = '1.1rem';
+      catEl.style.fontWeight = '700';
+      catEl.style.marginTop = '0.3rem';
+      document.getElementById('bmi-copy-text').textContent = `BMI: ${bmiRounded} (${category})`;
+      showResult('bmi-result');
+    }
+
+    /* ===== PERCENTAGE CALCULATOR ===== */
+    function calculatePercentage() {
+      const val = parseFloat(document.getElementById('pct-value').value);
+      const total = parseFloat(document.getElementById('pct-total').value);
+
+      if (isNaN(val) || isNaN(total) || total === 0) return showToast('Please enter valid Value and Total.');
+
+      const pct = (val / total) * 100;
+      const pctStr = pct.toFixed(2) + '%';
+
+      document.getElementById('pct-answer').textContent = pctStr;
+      document.getElementById('pct-val-display').textContent = val;
+      document.getElementById('pct-total-display').textContent = total;
+      document.getElementById('pct-copy-text').textContent = `${val} is ${pctStr} of ${total}`;
+      showResult('pct-result');
+    }
+
+    /* ===== SIMPLE INTEREST ===== */
+    function calculateSI() {
+      const p = parseFloat(document.getElementById('si-principal').value);
+      const r = parseFloat(document.getElementById('si-rate').value);
+      const t = parseFloat(document.getElementById('si-time').value);
+
+      if (!p || !r || !t || p <= 0 || r <= 0 || t <= 0) return showToast('Please fill all fields with valid values.');
+
+      const interest = (p * r * t) / 100;
+      const amount = p + interest;
+
+      document.getElementById('si-interest').textContent = '₹' + fmt(Math.round(interest));
+      document.getElementById('si-total').textContent = '₹' + fmt(Math.round(amount));
+      document.getElementById('si-copy-text').textContent = `Interest: ₹${fmt(Math.round(interest))} | Total Amount: ₹${fmt(Math.round(amount))}`;
+      showResult('si-result');
+    }
+
+    /* ===== FAQ ACCORDION ===== */
+    function toggleFAQ(btn) {
+      const answer = btn.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+
+      if (!isOpen) {
+        answer.classList.add('open');
+        btn.classList.add('active');
+      }
+    }
+
+    /* ===== PAGE MODALS (About, Contact, Privacy) ===== */
+    function openPageModal(page) {
+      closeAllModals();
+      const id = 'modal-' + page;
+      document.getElementById(id).classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePageModal(id) {
+      document.getElementById(id).classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function handlePageOverlayClick(e, id) {
+      if (e.target === document.getElementById(id)) closePageModal(id);
+    }
+    function closeAllModals() {
+      ['modal-about','modal-contact','modal-privacy','dev-modal'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.remove('open');
+      });
+      document.body.style.overflow = '';
+    }
+
+    /* ===== CONTACT WHATSAPP ===== */
+    function sendContactViaWhatsApp(e) {
+      e.preventDefault();
+      const name    = document.getElementById('cf-name').value.trim();
+      const email   = document.getElementById('cf-email').value.trim();
+      const message = document.getElementById('cf-message').value.trim();
+      if (!name || !message) { showToast('Please enter your name and message.'); return; }
+      const text = encodeURIComponent(
+        `Hello Shaurya!\n\nName: ${name}\nEmail: ${email || 'N/A'}\n\nMessage:\n${message}\n\n(Sent from Smart Tools Hub)`
+      );
+      window.open('https://wa.me/916393552560?text=' + text, '_blank');
+    }
+
+    /* ===== DEVELOPER MODAL ===== */
+    function openModal() {
+      closeAllModals();
+      document.getElementById('dev-modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      document.getElementById('dev-modal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function handleOverlayClick(e) {
+      if (e.target === document.getElementById('dev-modal')) closeModal();
+    }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAllModals(); });
+
+    /* ===== ENTER KEY SUPPORT ===== */
+    document.getElementById('age-dob').addEventListener('keydown', e => { if (e.key === 'Enter') calculateAge(); });
+    ['emi-principal','emi-rate','emi-months'].forEach(id => {
+      document.getElementById(id).addEventListener('keydown', e => { if (e.key === 'Enter') calculateEMI(); });
+    });
+    ['bmi-height','bmi-weight'].forEach(id => {
+      document.getElementById(id).addEventListener('keydown', e => { if (e.key === 'Enter') calculateBMI(); });
+    });
+    ['pct-value','pct-total'].forEach(id => {
+      document.getElementById(id).addEventListener('keydown', e => { if (e.key === 'Enter') calculatePercentage(); });
+    });
+    ['si-principal','si-rate','si-time'].forEach(id => {
+      document.getElementById(id).addEventListener('keydown', e => { if (e.key === 'Enter') calculateSI(); });
+    });
+  </script>
+
+</body>
+</html>
